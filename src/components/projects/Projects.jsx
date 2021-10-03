@@ -1,0 +1,1 @@
+//slider to naviagte through porfolio projects (with preview images), as well as vitallyveg website. 
