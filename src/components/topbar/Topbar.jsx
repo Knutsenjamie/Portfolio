@@ -12,7 +12,7 @@ export default function Topbar() {
     return (
         <div className="topbar">
                     <Box sx={{ flexGrow: 1 }}>
-                        <AppBar position="static" style={{backgroundColor: "#00738b" }}>
+                        <AppBar position="fixed" style={{backgroundColor: "#00738b" }}>
                             <Toolbar>
                             {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                 <a href="#aboutme">About Me</a>
