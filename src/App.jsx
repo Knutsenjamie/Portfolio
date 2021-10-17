@@ -2,9 +2,11 @@ import Topbar from "./components/topbar/Topbar";
 import Aboutme from "./components/aboutme/Aboutme";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import "./app.scss";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: [
       'Poppins',
@@ -16,14 +18,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="app">
-        <div className="sections">
         <Topbar/>
-        <ol>
-          <ul><Aboutme/></ul>
-          <ul><Contact/></ul>
-          <ul><Projects/></ul> 
-        </ol>
-        </div>
+      <div className="sections">
+        <Box sx={{ flexGrow: 1 }}>
+          <Aboutme/>
+          <Contact/>
+          <Projects/> 
+        </Box>
+      </div>
       </div>
     </ThemeProvider>
   );
