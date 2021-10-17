@@ -20,11 +20,9 @@ function App() {
       <div className="app">
         <Topbar/>
       <div className="sections">
-        <Box sx={{ flexGrow: 1 }}>
           <Aboutme/>
           <Contact/>
           <Projects/> 
-        </Box>
       </div>
       </div>
     </ThemeProvider>

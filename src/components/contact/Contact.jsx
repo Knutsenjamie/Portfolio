@@ -4,7 +4,8 @@ import "./contact.scss"
 export default function Contact() {
     return (
         <div className="contact" id="contact">
-            <h1>some more bs</h1>
+            <div className="h1contact" id="h1contact">
+            </div>
         </div>
     )
 }
