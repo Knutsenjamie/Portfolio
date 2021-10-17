@@ -4,7 +4,7 @@ import "./projects.scss"
 export default function Projects() {
     return (
         <div className="projects" id="projects">
-            
+            <h1>extra EXTRA bs</h1>
         </div>
     )
 }

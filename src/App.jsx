@@ -1,4 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
+import Aboutme from "./components/aboutme/Aboutme";
+import Contact from "./components/contact/Contact";
+import Projects from "./components/projects/Projects";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -13,12 +16,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="app">
+        <div className="sections">
         <Topbar/>
         <ol>
-          <ul>yooo im just a filler right now</ul>
-          <ul><em>yooo im just a filler right now</em></ul>
-          <ul><strong>yooo im just a filler right now</strong></ul>
+          <ul><Aboutme/></ul>
+          <ul><Contact/></ul>
+          <ul><Projects/></ul> 
         </ol>
+        </div>
       </div>
     </ThemeProvider>
   );
