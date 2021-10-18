@@ -7,6 +7,7 @@
     background-color: #002d49;
     position: relative;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 
     > * {
       width: 100vw;

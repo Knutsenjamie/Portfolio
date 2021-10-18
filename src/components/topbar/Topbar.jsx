@@ -10,8 +10,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 export default function Topbar() {
     return (
         <div className="topbar">
-            <div className="left">
-            <div className="right">
+            <div className="wrapper">
                     <Box sx={{ flexGrow: 1 }}>
                         <AppBar position="fixed" style={{backgroundColor: "#00738b" }}>
                             <Toolbar>
@@ -45,10 +44,14 @@ export default function Topbar() {
                                 <GitHubIcon/>
                             </Link>
                             </IconButton>
+                            <div className="right">
+                                <Typography variant="h6">
+                                    menu
+                                </Typography>
+                            </div>
                             </Toolbar>
                         </AppBar>
                     </Box>
-                    </div>
                     </div>
             </div>
     );
