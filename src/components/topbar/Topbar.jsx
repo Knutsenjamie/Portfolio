@@ -1,7 +1,6 @@
-//solely for navigation/links to socials
 import "./topbar.scss"
 import * as React from 'react';
-import { AppBar, Box, Toolbar, Typography, IconButton} from '@material-ui/core';
+import { AppBar, Box, Link, Toolbar, Typography, IconButton} from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -11,6 +10,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 export default function Topbar() {
     return (
         <div className="topbar">
+            <div className="left">
+            <div className="right">
                     <Box sx={{ flexGrow: 1 }}>
                         <AppBar position="fixed" style={{backgroundColor: "#00738b" }}>
                             <Toolbar>
@@ -24,23 +25,31 @@ export default function Topbar() {
                                 color="inherit"
                                 sx={{ml: 8}}
                             >
-                                <LinkedInIcon/>
+                                <Link href="https://www.linkedin.com/in/jamie-knutsen-001/" color="inherit">
+                                    <LinkedInIcon/>
+                                </Link>
                             </IconButton>
                             <IconButton 
                                 color="inherit"
                                 sx={{ml: 8}}
                             >
+                            {/* <Link href="knutsenjamie@yahoo.com" color="inherit"> */}
                                 <EmailIcon/>
+                            {/* </Link> */}
                             </IconButton>
                             <IconButton 
                                 color="inherit"
                                 sx={{ml: 8}}
                             >
+                            <Link href="https://github.com/Knutsenjamie" color="inherit">
                                 <GitHubIcon/>
+                            </Link>
                             </IconButton>
                             </Toolbar>
                         </AppBar>
                     </Box>
+                    </div>
+                    </div>
             </div>
     );
 }
