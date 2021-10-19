@@ -45,9 +45,11 @@ export default function Topbar() {
                             </Link>
                             </IconButton>
                             <div className="right">
-                                <Typography variant="h6">
-                                    menu
-                                </Typography>
+                                <div className="hammenu">
+                                    <span className="line1"></span>
+                                    <span className="line2"></span>
+                                    <span className="line3"></span>
+                                </div>
                             </div>
                             </Toolbar>
                         </AppBar>

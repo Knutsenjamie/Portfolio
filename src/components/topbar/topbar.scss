@@ -13,4 +13,20 @@
   margin-left: 660px;
   display: flex;
   justify-content: space-between;
+
+  .hammenu {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span {
+      margin-left: 30px;
+      width: 30px;
+      height: 3px;
+      background-color: white;
+    }
+  }
 }
