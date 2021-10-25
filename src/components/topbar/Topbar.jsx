@@ -7,9 +7,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 
-export default function Topbar() {
+export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
-        <div className="topbar">
+        <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                     <Box sx={{ flexGrow: 1 }}>
                         <AppBar position="fixed" style={{backgroundColor: "#00738b" }}>
@@ -18,7 +18,7 @@ export default function Topbar() {
                                 <a href="#aboutme">About Me</a>
                             </Typography> */}
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                Hello!  I'm Jamie :) 
+                                Hello,  I'm Jamie!
                             </Typography>
                             <IconButton 
                                 color="inherit"
@@ -32,9 +32,9 @@ export default function Topbar() {
                                 color="inherit"
                                 sx={{ml: 8}}
                             >
-                            {/* <Link href="knutsenjamie@yahoo.com" color="inherit"> */}
+                            <Link href="knutsenjamie@yahoo.com" color="inherit">
                                 <EmailIcon/>
-                            {/* </Link> */}
+                            </Link>
                             </IconButton>
                             <IconButton 
                                 color="inherit"
@@ -45,7 +45,7 @@ export default function Topbar() {
                             </Link>
                             </IconButton>
                             <div className="right">
-                                <div className="hammenu">
+                                <div className="hammenu" onClick={()=>setMenuOpen(!menuOpen)}>
                                     <span className="line1"></span>
                                     <span className="line2"></span>
                                     <span className="line3"></span>

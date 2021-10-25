@@ -5,6 +5,7 @@ import Projects from "./components/projects/Projects";
 import { Box } from '@material-ui/core';
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import "./app.scss";
+import { useState } from "react";
 
 const theme = createTheme({
   typography: {
@@ -15,10 +16,11 @@ const theme = createTheme({
   },});
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <ThemeProvider theme={theme}>
       <div className="app">
-        <Topbar/>
+        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
           <Aboutme/>
           <Contact/>
