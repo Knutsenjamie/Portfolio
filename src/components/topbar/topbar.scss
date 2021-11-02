@@ -6,14 +6,15 @@
       span {
         &:first-child {
           background-color: white;
-          transform: rotate(90deg);
+          transform: rotate(180deg);
         }
         &:nth-child(2) {
-          opacity: 0;
+          background-color: white;
+          transform: rotate(-180deg);
         }
         &:last-child {
           background-color: white;
-          transform: rotate(90deg);
+          transform: rotate(180deg);
         }
       }
     }
