@@ -2,9 +2,9 @@ import React from "react"
 import "./menu.scss"
 
 
-export default function Menu() {
+export default function Menu({ menuOpen, setMenuOpen }) {
     return (
-        <div className="menu">
+        <div className={"menu "+(menuOpen && "active")}>
             <ul>
                 <li>
                     <a  href="#aboutme">About Me</a>

@@ -22,7 +22,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="app">
         <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <Menu/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
           <Aboutme/>
           <Contact/>
