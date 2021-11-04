@@ -14,9 +14,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <Box sx={{ flexGrow: 1 }}>
                         <AppBar position="fixed" style={{backgroundColor: "#00738b" }}>
                             <Toolbar>
-                            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                <a href="#aboutme">About Me</a>
-                            </Typography> */}
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                 Hello,  I'm Jamie!
                             </Typography>
