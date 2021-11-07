@@ -1,3 +1,12 @@
 .aboutme {
   background-color: #002d49;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+  }
+
+  .right {
+    flex: 0.3;
+  }
 }

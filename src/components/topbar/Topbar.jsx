@@ -29,17 +29,20 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                                 color="inherit"
                                 sx={{ml: 8}}
                             >
-                            <Link href="knutsenjamie@yahoo.com" color="inherit">
-                                <EmailIcon/>
+                            <Link href="https://github.com/Knutsenjamie" color="inherit">
+                                <GitHubIcon/>
                             </Link>
                             </IconButton>
                             <IconButton 
                                 color="inherit"
-                                sx={{ml: 8}}
+                                sx={{
+                                    ml: 8
+                                }}
                             >
-                            <Link href="https://github.com/Knutsenjamie" color="inherit">
-                                <GitHubIcon/>
-                            </Link>
+                                <EmailIcon/>
+                                <Typography>
+                                    knutsenjamie@yahoo.com
+                                </Typography>
                             </IconButton>
                             <div className="right">
                                 <div className="hammenu" onClick={()=>setMenuOpen(!menuOpen)}>
