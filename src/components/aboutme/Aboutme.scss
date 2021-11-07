@@ -4,9 +4,27 @@
 
   .left {
     flex: 0.5;
+
+    .imgContainer {
+      width: 1px;
+    }
   }
 
   .right {
     flex: 0.3;
+
+    .aboutText {
+      margin-top: 70px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      p {
+        font-size: 13px;
+      }
+
+      span {
+        margin-left: 25px;
+      }
+    }
   }
 }
