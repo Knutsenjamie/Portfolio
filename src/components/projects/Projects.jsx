@@ -22,8 +22,15 @@ export default function Projects() {
                     </ul>
                     <Container>
                         <div className="item">
-                            <img src="" alt=""/>
+                            <img src="assets/VALIDATEproj.png" alt="Validate website preview"/>
                         </div>
+                        <Typography
+                            sx={{
+                                variant: 'h3'
+                            }}
+                        >
+                        VALIDATE
+                        </Typography>
                     </Container>
             </div>
         </div>
