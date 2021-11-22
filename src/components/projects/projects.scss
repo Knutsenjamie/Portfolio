@@ -3,13 +3,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.textColor {
-  color: white;
+  .textColor {
+    color: white;
 
-  img {
-    width: 450px;
-    height: 260px;
+    h1 {
+      margin-left: 280px;
+    }
+
+    h3 {
+      margin-left: 280px;
+    }
+
+    ul {
+      margin: 10px;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-right: 8px;
+        padding: 1;
+        align-items: center;
+      }
+    }
+
+    .item {
+      align-items: center;
+    }
+
+    img {
+      width: 450px;
+      height: 260px;
+      margin-left: 100px;
+    }
   }
 }
