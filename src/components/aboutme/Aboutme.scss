@@ -4,9 +4,21 @@
 
   .left {
     flex: 0.5;
+    overflow: hidden;
 
     .imgContainer {
-      width: 1px;
+      width: 700px;
+      height: 700px;
+      // background-color: aqua;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+      img {
+        width: 90%;
+      }
     }
   }
 
@@ -17,9 +29,10 @@
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 50px;
+      padding-bottom: 30px;
 
       p {
-        font-size: 13px;
+        font-size: 14px;
       }
 
       span {
