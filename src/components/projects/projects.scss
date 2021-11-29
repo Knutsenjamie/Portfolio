@@ -6,6 +6,7 @@
 
   .textColor {
     color: white;
+    align-items: center;
 
     h1 {
       margin-left: 280px;
@@ -31,6 +32,7 @@
 
     .item {
       align-items: center;
+      display: flex;
     }
 
     img {
