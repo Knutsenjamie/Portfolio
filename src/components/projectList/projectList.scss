@@ -1,0 +1,10 @@
+.projectList {
+  margin-right: 20px;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &.active {
+    background-color: #00738b;
+  }
+}

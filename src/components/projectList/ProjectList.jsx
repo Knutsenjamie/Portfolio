@@ -1,10 +1,13 @@
 import React from 'react'
 import "./projectList.scss"
 
-export default function ProjectList({title}) {
+export default function ProjectList({id, title, active, setSelected}) {
     return (
-        <li className="projectList">
-            {title}
-        </li>
-    )
+    <li 
+        className={active ? "projectList active" : "projectList"} 
+        onClick={()=>setSelected(id)}
+    >
+        {title}
+    </li>
+    );
 }

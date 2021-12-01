@@ -1,9 +1,10 @@
 //slider to naviagte through porfolio projects (with preview images), as well as vitallyveg website. 
-import { Typography, Container } from '@material-ui/core';
+import { useEffect, useState } from 'react';
 import ProjectList from '../projectList/ProjectList';
 import "./projects.scss"
 
 export default function Projects() {
+    const[selected, setSelected] = useState("validate")
 
     const list = [
         {
@@ -34,7 +35,12 @@ export default function Projects() {
                     <h1>Projects</h1> 
                         <ul>
                             {list.map(item=>(
-                                <ProjectList title={item.title}/>
+                                <ProjectList 
+                                title={item.title} 
+                                active={selected === item.id} 
+                                setSelected={setSelected}
+                                id={item.id}
+                                />
                             ))}
                         </ul>
                         <div className="container">
