@@ -1,18 +1,41 @@
 //slider to naviagte through porfolio projects (with preview images), as well as vitallyveg website. 
 import { Typography, Container } from '@material-ui/core';
+import ProjectList from '../projectList/ProjectList';
 import "./projects.scss"
 
 export default function Projects() {
+
+    const list = [
+        {
+            id: "validate",
+            title: "VALIDATE",
+        },
+        {
+            id: "mockup",
+            title: "Vitally Veg Mock-Up",
+        },
+        {
+            id: "api",
+            title: "Vitally Veg API",
+        },
+        {
+            id: "fable",
+            title: "Fable Of Griselda",
+        },
+        {
+            id: "cat",
+            title: "Blind Cat Tinder",
+        },
+    ];
+
     return (
         <div className="projects" id="projects">
             <div className='textColor'>
                     <h1>Projects</h1> 
                         <ul>
-                            <li className="active">VALIDATE</li>
-                            <li>Vitally Veg Mock-Up</li>
-                            <li>Vitally Veg API</li>
-                            <li>Fable Of Griselda</li>
-                            <li>Blind Cat Tinder</li>
+                            {list.map(item=>(
+                                <ProjectList title={item.title}/>
+                            ))}
                         </ul>
                         <div className="container">
                             <div className="item">

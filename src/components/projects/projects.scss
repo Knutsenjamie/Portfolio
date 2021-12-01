@@ -6,11 +6,6 @@
 
   .textColor {
     color: white;
-    // align-items: center;
-
-    // h3 {
-    //   display: flex;
-    // }
 
     h3 {
       margin: 10px;
@@ -43,31 +38,17 @@
       flex-wrap: wrap;
     }
 
-    //   li {
-    //     margin-right: 10px;
-    //     padding: 7;
-    //     align-items: center;
-    //     border-radius: 5px;
-    //     cursor: pointer;
-
-    //     &.active {
-    //       background-color: #00738b;
-    //     }
-    //   }
-    // }
-
-    // .item {
-    //   align-items: center;
-    //   display: flex;
-    // }
-
     img {
       width: 300px;
       height: 175px;
       border-radius: 20px;
       border: 1px solid #002d49;
-      margin: 10px;
-      // margin-left: 100px;
+      margin: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+      z-index: 1;
     }
   }
 }
