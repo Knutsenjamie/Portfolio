@@ -31,6 +31,8 @@
       border: 1px solid #002d49;
       object-fit: cover;
       z-index: 1;
+      transition: all 0.5s ease;
+      cursor: pointer;
     }
 
     .item {
