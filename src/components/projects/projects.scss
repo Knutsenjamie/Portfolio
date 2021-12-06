@@ -43,7 +43,14 @@
       h3 {
         position: absolute;
         align-items: center;
-        // margin: 5px;
+      }
+
+      &:hover {
+        background-color: #002d49;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
       }
     }
   }
