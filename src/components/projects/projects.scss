@@ -1,16 +1,12 @@
 .projects {
   background-color: #002d49;
+  margin-right: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .textColor {
     color: white;
-
-    h3 {
-      position: absolute;
-      margin: 10px;
-    }
 
     ul {
       margin: 10px;
@@ -33,15 +29,22 @@
       height: 175px;
       border-radius: 20px;
       border: 1px solid #002d49;
+      object-fit: cover;
+      z-index: 1;
     }
 
     .item {
-      margin: 30px 20px;
+      margin: 20px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       object-fit: cover;
-      z-index: 1;
+
+      h3 {
+        position: absolute;
+        align-items: center;
+        // margin: 5px;
+      }
     }
   }
 }
