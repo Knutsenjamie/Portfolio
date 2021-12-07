@@ -45,7 +45,7 @@ export default function Projects() {
                         </ul>
                         <div className="container">
                                 <div className="item">
-                                    <img src="assets/VALIDATEproj.png" alt="Validate website preview"/>
+                                    <img src="assets/VALIDATEproj.png" alt="Validate website preview" onClick={()=>("https://github.com/Indev-Hub/VALIDATEAlpha")}/>
                                     <h3>VALIDATE</h3>
                                 </div>
                                 <div className="item">
