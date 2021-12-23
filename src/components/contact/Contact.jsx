@@ -1,28 +1,62 @@
-import React from 'react'
+import React from 'react';
 import "./contact.scss"
 import { TextField, Button } from '@material-ui/core';
-// import { ContactForm } from '../contactForm/ContactForm';
+import  UseFormControls from '../useformcontrols/UseFormControls';
 
-// export default function Contact() {
-//     return (
-//         // <div className="contact" id="contact">
-//         //         {/* <ContactForm/> */}
-//         // </div>
-        
-//     )
-// }
+const inputFieldValues = [
+    {
+        name: "fullName",
+        label: "Full Name",
+        id: "my-name"
+    },
+    {
+        name: "email",
+        label: "Email",
+        id: "my-email"
+    },
+    {
+        name: "message",
+        label: "Message",
+        id: "my-message",
+        multiline: true,
+        rows: 10
+    }
+];
 
 export default function Contact() {
+    const {
+        handleInputValue,
+        handleFormSubmit,
+        formIsValid,
+        errors
+    } = UseFormControls();
     return (
         <div className="contact" id="contact">
             <h1>Contact Me</h1>
-                <form>
-                    <TextField label="Full Name" fullWidth autocomplete="none"/>
-                    <TextField label="Email" fullWidth autocomplete="none"/>
-                    <TextField label="Message" fullWidth multiline rows={5} autocomplete=
-                    "none"/>
-                    <Button type="submit">Submit</Button>
-                </form>
+            <form onSubmit={handleFormSubmit}>
+                {inputFieldValues.map((inputFieldValue, index) => {
+                    return (
+                        <TextField
+                            key={index}
+                            onBlur={handleInputValue}
+                        onChange={handleInputValue}
+                            name={inputFieldValue.name}
+                            label={inputFieldValue.label}
+                            multiline={inputFieldValue.multiline ?? false}
+                            rows={inputFieldValue.rows ?? 1}
+                        autoComplete="none"
+                        {...(errors[inputFieldValue.name] && { error: true, helperText: errors[inputFieldValue.name] })}
+
+                        />
+                    );
+                })}
+                <Button
+                    type="submit"
+                    disabled={!formIsValid()}
+                >
+                    Send Message
+                </Button>
+            </form>
         </div>
     )
 }

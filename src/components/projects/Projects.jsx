@@ -37,7 +37,7 @@ export default function Projects() {
                             {list.map(item=>(
                                 <ProjectList 
                                 title={item.title} 
-                                active={selected === item.id} 
+                                active={selected === item.id}  
                                 setSelected={setSelected}
                                 id={item.id}
                                 />
