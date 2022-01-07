@@ -1,7 +1,7 @@
 import React from 'react';
 import "./contact.scss"
 import { TextField, Button } from '@material-ui/core';
-import  UseFormControls from '../useformcontrols/UseFormControls';
+import { useFormControls } from '../useformcontrols/UseFormControls';
 
 const inputFieldValues = [
     {
@@ -29,7 +29,7 @@ export default function Contact() {
         handleFormSubmit,
         formIsValid,
         errors
-    } = UseFormControls();
+    } = useFormControls();
     return (
         <div className="contact" id="contact">
             <h1>Contact Me</h1>

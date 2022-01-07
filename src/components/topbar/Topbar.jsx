@@ -32,17 +32,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                                 <GitHubIcon/>
                             </Link>
                             </IconButton>
-                            {/* <IconButton 
-                                color="inherit"
-                                sx={{
-                                    ml: 8
-                                }}
-                            >
-                                <EmailIcon/>
-                                <Typography>
-                                    knutsenjamie@yahoo.com
-                                </Typography>
-                            </IconButton> */}
                             <div className="right">
                                 <div className="hammenu" onClick={()=>setMenuOpen(!menuOpen)}>
                                     <span className="line1"></span>

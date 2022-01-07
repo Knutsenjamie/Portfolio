@@ -1,5 +1,6 @@
 .topbar {
   z-index: 2;
+  display: flex;
 
   &.active {
     .hammenu {
@@ -24,12 +25,12 @@
 .wrapper {
   padding: 10px 30px;
   display: flex;
-  justify-content: space-between;
+  align-self: flex-end;
 }
 
 .right {
-  padding: 20px 30px;
-  margin-left: 700px;
+  // padding: 20px 30px;
+  // margin-left: 700px;
   display: flex;
   justify-content: space-between;
 
@@ -38,7 +39,7 @@
     height: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     cursor: pointer;
     position: static;
 

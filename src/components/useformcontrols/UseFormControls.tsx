@@ -30,7 +30,7 @@ export const useFormControls = () => {
     if ("email" in fieldValues) {
         temp.email = fieldValues.email ? "" : "This field is required.";
         if (fieldValues.email)
-        temp.email = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(fieldValues.email)
+        temp.email = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(fieldValues.email) 
             ? ""
             : "Email is not valid.";
     }
@@ -96,3 +96,4 @@ export const useFormControls = () => {
     formIsValid
     };
 };
+
