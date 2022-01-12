@@ -23,6 +23,7 @@ const inputFieldValues = [
     }
 ];
 
+
 export default function Contact() {
     const {
         handleInputValue,
@@ -36,26 +37,29 @@ export default function Contact() {
             <form onSubmit={handleFormSubmit}>
                 {inputFieldValues.map((inputFieldValue, index) => {
                     return (
+                    <div className="emailForm">
                         <TextField
                             key={index}
                             onBlur={handleInputValue}
-                        onChange={handleInputValue}
+                            onChange={handleInputValue}
                             name={inputFieldValue.name}
                             label={inputFieldValue.label}
                             multiline={inputFieldValue.multiline ?? false}
                             rows={inputFieldValue.rows ?? 1}
-                        autoComplete="none"
-                        {...(errors[inputFieldValue.name] && { error: true, helperText: errors[inputFieldValue.name] })}
-
+                            autoComplete="none"
+                            {...(errors[inputFieldValue.name] && { error: true, helperText: errors[inputFieldValue.name] })}
                         />
+                    </div>
                     );
                 })}
-                <Button
-                    type="submit"
-                    disabled={!formIsValid()}
-                >
-                    Send Message
-                </Button>
+                <div className="buttonStyling">
+                    <Button
+                        type="submit"
+                        disabled={!formIsValid()}
+                    >
+                        Send Message
+                    </Button>
+                </div>
             </form>
         </div>
     )

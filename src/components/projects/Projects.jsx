@@ -71,14 +71,14 @@ export default function Projects() {
                             <div className="item">
                                 <a href="https://vitallyveg.com/">
                                     <img src="assets/vegSite.png" alt="Wordpress vitally veg website preview"/>
-                                    </a>
+                                </a>
                                     <h3>Vitally Veg Wordpress Site</h3>
                             </div>
                             <div className="item">
                                 <a href="https://github.com/Knutsenjamie/blind-cat-tinder">
                                     <img src="assets/catTinder.png" alt="Blind cat tinder website preview"/>
-                                    <h3>Blind Cat Tinder</h3>
                                 </a>
+                                    <h3>Blind Cat Tinder</h3>
                             </div>
                         </div>
                 </div>
