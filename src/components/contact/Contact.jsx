@@ -39,6 +39,9 @@ export default function Contact() {
                     return (
                     <div className="emailForm">
                         <TextField
+                            sx={{
+                                color: 'white'
+                            }}
                             key={index}
                             onBlur={handleInputValue}
                             onChange={handleInputValue}

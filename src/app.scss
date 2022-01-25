@@ -3,11 +3,12 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 64px);
     background-color: #002d49;
     position: relative;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    margin-top: 64px;
 
     > * {
       width: 100vw;

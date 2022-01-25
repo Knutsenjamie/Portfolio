@@ -4,7 +4,7 @@
 
   &.active {
     .hammenu {
-      span {
+      .topbarLines {
         &:first-child {
           background-color: white;
           transform: rotate(180deg);
@@ -22,17 +22,30 @@
   }
 }
 
-.wrapper {
-  padding: 10px 30px;
+.topbarWrapper {
+  // padding: 10px 30px;
   display: flex;
   align-self: flex-end;
 }
+.topbarLeft {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+.appBar {
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
 
-.right {
+.topbarRight {
   // padding: 20px 30px;
   // margin-left: 700px;
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
 
   .hammenu {
     width: 40px;
@@ -43,12 +56,15 @@
     cursor: pointer;
     position: static;
 
-    span {
-      margin-left: 60px;
+    .topbarLines {
       width: 30px;
       height: 3px;
       background-color: white;
       transition: all 1s ease-in;
     }
   }
+}
+
+.topbarBox {
+  background-color: red;
 }

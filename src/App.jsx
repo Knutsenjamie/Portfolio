@@ -24,9 +24,7 @@ function App() {
         <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
-          <Aboutme/>
-          <Contact/>
-          <Projects/> 
+        <Aboutme/>
       </div>
       </div>
     </ThemeProvider>
@@ -34,3 +32,6 @@ function App() {
 }
 
 export default App;
+
+{/* <Contact/>
+<Projects/>  */}
