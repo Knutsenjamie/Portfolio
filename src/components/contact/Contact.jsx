@@ -34,14 +34,12 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <h1>Contact Me</h1>
-            <form onSubmit={handleFormSubmit}>
+            <img className="contactimg" src="assets/contactbanner.png" alt="contact me!"/>
+            <form className="contactform" onSubmit={handleFormSubmit}>
                 {inputFieldValues.map((inputFieldValue, index) => {
                     return (
                     <div className="emailForm">
                         <TextField
-                            sx={{
-                                color: 'white'
-                            }}
                             key={index}
                             onBlur={handleInputValue}
                             onChange={handleInputValue}

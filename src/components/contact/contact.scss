@@ -1,6 +1,18 @@
 .contact {
   background-color: #00738b;
 
+  .contactimg {
+    width: 100%;
+    height: 35%;
+    // overflow: hidden;
+  }
+
+  .contactform {
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: whitesmoke;
+  }
+
   .emailForm {
     align-items: center;
     display: grid;

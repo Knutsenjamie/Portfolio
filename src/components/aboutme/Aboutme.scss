@@ -26,9 +26,9 @@
 }
 .aboutBox {
   display: flex;
-
   width: 80%;
   background-color: whitesmoke;
+  overflow: auto;
 }
 
 .aboutImgContainer {
@@ -59,13 +59,12 @@
   padding-top: 50px;
   padding-bottom: 30px;
   background-color: whiteSmoke;
+  overflow: auto;
 }
 p {
   font-size: 14px;
 }
-.aboutBox {
-  overflow: scroll;
-}
+
 //       span {
 //         margin-left: 25px;
 //       }

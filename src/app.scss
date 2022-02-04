@@ -9,6 +9,7 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     margin-top: 64px;
+    scrollbar-width: none;
 
     > * {
       width: 100vw;
@@ -20,4 +21,8 @@
 
 h1 {
   color: white;
+}
+
+.sections::-webkit-scrollbar {
+  display: none;
 }
